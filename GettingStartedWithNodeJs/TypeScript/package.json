@@ -1,0 +1,18 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "testdescr",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext .js",
+    "prettier": "prettier --config .prettierrc \"src/**/*.js\" --write"
+  },
+  "author": "auth",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8"
+  }
+}
