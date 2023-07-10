@@ -26,3 +26,6 @@ it('should concatenate 2 arrays to not equal just 1', function () {
 it('should not contain the third index', function () {
     expect(arrays_1.default.cut3(wordArr)).not.toContain('rabbit');
 });
+it('should return the original array if it has less than 3 elements', function () {
+    expect(arrays_1.default.cut3(['apple', 'banana'])).toEqual(['apple', 'banana']);
+});
