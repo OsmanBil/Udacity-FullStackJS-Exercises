@@ -2,9 +2,12 @@
   "name": "connecting-node-to-a-postgres-database",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.jt",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.ts",
+    "watch": "tsc-watch --esModuleInterop src/server.ts --outDir ./dist --onSuccess \"npm start\"",
+    "test": "jasmine-ts",
+    "tsc": "tsc"
   },
   "keywords": [],
   "author": "",
